@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.a::after { 
+  content: " - XYZ";
+}
+p.b::before {
+  content: "XYZ - ";
+}
+p.c::first-letter {
+  font-size: 250%;
+  color: #008cff;
+}
+p.d::first-line {
+  background-color: yellow;
+}
+::marker { 
+  color: rgb(0, 255, 234);
+}
+::selection {
+  color: rgb(60, 255, 0);
+  background: rgb(0, 255, 221);
+}
+</style>
+</head>
+<body>  
+    <!--::after-->
+    <p class="a">ABC</p>
+    <p class="a">ABC</p>
+<hr>
+    <!--::before-->
+    <p class="b">ABC</p>
+    <p class="b">ABC</p>
+<hr>
+    <!--::first-letter-->
+    <p class="c">QWERTY</p>
+    <p class="c">WASD</p>
+    <p class="c">ABC</p>
+<hr>
+    <!--::first-lane-->
+    <p class="d">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae varius lectus, eget sagittis nunc. Proin dapibus facilisis interdum. Fusce laoreet metus eget hendrerit ultricies. Integer suscipit risus turpis, at efficitur velit ullamcorper non. Nullam non felis vel tellus aliquet mattis ac eleifend orci. Quisque vitae purus tincidunt, suscipit leo non, euismod sapien. Cras ac augue a arcu fermentum lacinia vel ut libero. Nulla bibendum ligula tempus odio blandit viverra nec in purus. Vivamus facilisis nunc quis lorem tempus, ac consectetur metus ultrices. Fusce egestas malesuada massa, non sodales sem euismod vehicula. Sed eu pulvinar magna. Mauris sed rutrum dolor. Proin vestibulum venenatis hendrerit. Donec est ante, aliquet quis volutpat non, rhoncus et nibh. Ut ac turpis vitae urna pellentesque bibendum eget nec purus. Integer iaculis purus nec condimentum tincidunt.</p>
+<hr>
+    <!--::marker-->
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+<hr>
+    <!--::selection-->
+    <p>WASD</p>
+</body>
+</html>

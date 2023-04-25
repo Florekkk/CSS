@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.intro {
+  background-color: yellow;
+}
+#a {
+  background-color: rgb(255, 0, 0);
+}
+a[target] {
+  background-color: rgb(255, 0, 234);
+}
+div[class$="test"] {
+  background: #00ff15;
+}
+div + p {
+  background-color: rgb(0, 102, 255);
+}
+</style>
+</head>
+<body>
+    <!--.class-->
+    <div class="intro">
+        <p>Mam na imię Bartosz.</p>
+        <p>Mieszkam w Łodzi.</p>
+    </div>
+<hr>
+    <!--#id-->
+    <div>
+        <p id="a">Mam na imię Bartosz.</p>
+        <p id="ab">Mieszkam w Łodzi.</p>
+    </div>
+<hr>
+    <!--[attribute]-->
+    <a href="https://www.google.com" target="_blank">Google.com</a>
+<hr> 
+    <!--[attribute$=value]-->
+    <div class="first_test">1. test</div>
+    <div class="second">2. test</div>
+    <div class="test">3. test</div>
+<hr>
+    <!--element+element-->
+    <div>
+        <p>Mieszkam w Łodzi.</p>
+    </div>
+        <p>Mam na imię Bartosz</p>
+        <p>ABCABC</p>
+</body>
+</html>

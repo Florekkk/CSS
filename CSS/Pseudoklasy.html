@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.b {
+  background-color: rgb(255, 72, 0);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div.b:hover {
+  background-color: rgb(217, 255, 0);
+}
+p.c i:first-child {
+  color: rgb(255, 0, 149);
+} 
+q:lang(d) {
+  quotes: "{" "}";
+}
+:target {
+  border: 5px dotted #cc00ff;
+  background-color: #00b7ff;
+}
+input:focus {
+  background-color: rgb(157, 255, 0);
+}
+</style>
+</head>
+<body>
+    <!--:hover-->
+    <div class="b">Najedź kursorem</div>
+<hr>
+    <!--:first-child-->
+    <p class="c">wasd<i> wasd </i>wasd wasd<i> wasd </i>wasd</p>
+    <p class="c">wasd<i> wasd </i>wasd wasd<i> wasd </i>wasd</p>
+<hr>
+    <!--:lang-->
+    <p> <q lang="d">ABC</q></p>
+<hr>
+    <!--:target-->
+    <p><a href="#1">1</a></p>
+    <p><a href="#2">2</a></p>
+    <p id="1"><b>qwerty</b></p>
+    <p id="2"><b>qwerty</b></p>
+<hr>
+    <!--:focus-->
+<form>
+    Imię: <input type="text" name="imię"><br>
+    Nazwisko: <input type="text" name="nazwisko">
+  </form>
+  
+</body>
+</html>
